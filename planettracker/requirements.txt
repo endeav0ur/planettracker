@@ -1,0 +1,3 @@
+ephem==4.1.3
+pyephem
+aiohttp
