@@ -44,8 +44,7 @@ web.run_app(app, host="localhost", port=8000)
 
 
 async def start_app():
-    global runner
-    runner: web.AppRunner(app)
+    runner = web.AppRunner(app)
     await runner.setup()
     _site = web.TCPSite(runner, host="localhost", port=8000)
     await _site.start()
